@@ -3,11 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>My Modern Stylish Website</title>
+    <style>
+        /* Основной стиль страницы */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            overflow: hidden;
+            animation: backgroundMove 10s ease infinite;
+        }
+
+        /* Анимация для фона */
+        @keyframes backgroundMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* Контейнер для контента */
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Заголовок */
+        h1 {
+            font-size: 3.5em;
+            margin: 0 0 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Параграф */
+        p {
+            font-size: 1.4em;
+            margin: 0 0 30px;
+            opacity: 0.8;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Эффект плавного появления */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Стиль изображения */
+        img {
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Эффект при наведении на изображение */
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Кнопка с эффектом */
+        .btn {
+            padding: 15px 30px;
+            background-color: #0072ff;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #00c6ff;
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first website in HTML.</p>
-    <img src="https://i.imgur.com/CF5V38F.jpeg" alt="My Image" width="300">
+    <div class="container">
+        <h1>Hello, Beautiful World!</h1>
+        <p>Welcome to my modern, stylish website with smooth animations and beautiful design. Enjoy your time here!</p>
+        <img src="https://i.imgur.com/CF5V38F.jpeg" alt="My Image">
+        <br><br>
+        <button class="btn">Get Started</button>
+    </div>
 </body>
 </html>
+
